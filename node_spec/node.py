@@ -10,21 +10,24 @@ class Node(object):
     def get_data(self):
         """Returns data of current node
 
-        Returns:
-            [object] -- node data
+        :return: node data
+        :rtype: int/float/str/object
         """
+
         return self.data
 
     def get_next_node(self):
         """Returns next node
 
-        Returns:
-            [node object] -- next node to point
+        :return: next node to point
+        :rtype: node object
         """
+
         return self.next_node
 
     def set_next_node(self, next_node):
         """
             Sets new next node (next_node updation)
         """
+
         self.next_node = next_node
