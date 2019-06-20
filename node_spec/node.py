@@ -3,9 +3,10 @@ class Node(object):
         Node template class
     """
 
-    def __init__(self, data=None, next_node=None):
+    def __init__(self, data=None, next_node=None, prev_node=None):
         self.data = data
         self.next_node = next_node
+        self.prev_node = prev_node
 
     def get_data(self):
         """Returns data of current node
@@ -31,3 +32,19 @@ class Node(object):
         """
 
         self.next_node = next_node
+
+    def get_prev_node(self):
+        """Returns prev node
+
+        :return: prev node to point
+        :rtype: node object
+        """
+
+        return self.prev_node
+
+    def set_prev_node(self, prev_node):
+        """
+            Sets new prev node (prev_node updation)
+        """
+
+        self.prev_node = prev_node
